@@ -1,2 +1,2 @@
 # digitalSignalProcessing
-Collection of codes written in MATLAB for the DSP lab
+Collection of codes for DSP written in MATLAB
