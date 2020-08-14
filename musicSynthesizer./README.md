@@ -24,3 +24,13 @@ The function used to generate the envelope takes as inputs:
 
 It returns a time vector that is sampled as f_{s}Hz for a length of a + d + dur + r seconds.
 It also displays the ASDR envelope.
+
+The synthesizer function combines the other two functions to create a simple music synthesizer.
+The inputs are:
+• notes, a length N vector of note frequencies in Hz
+• durs, a length N vector of note durations in seconds
+• harmamps, a length M vector of harmonic amplitudes for each note
+• adsr, a length 4 vector of (attack duration, decay duration, sustain level, release duration)
+• fs, a sampling frequency in Hz
+
+The output sound produces the specified sequence of notes.
