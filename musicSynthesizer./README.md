@@ -11,3 +11,16 @@ fundamental frequency)
 • harmphase, an optional length N vector of harmonic phases (if this input argument is
 omitted, all the phases should be 0)
 
+The ASDR (attack, decay, sustain, release) envelope is used in synthesizers to model
+how the amplitude of a note chanes over time.
+
+The function used to generate the envelope takes as inputs:
+• fs , a sampling frequency in Hz
+• a, an attack duration in seconds
+• d, a decay duration in seconds
+• s, a sustain level in [0,1]
+• dur, a sustain duration in seconds
+• r, a release duration in seconds
+
+It returns a time vector that is sampled as f_{s}Hz for a length of a + d + dur + r seconds.
+It also displays the ASDR envelope.
