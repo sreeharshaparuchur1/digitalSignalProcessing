@@ -10,14 +10,14 @@ function X = dtft(x, N0, w)
   
   % Plotting the DTFT magnitude and phase
   figure;
-  subplot(2,1,1);
+  subplot(211);
   %plottng the magnitude part
   plot(w,abs(X));
   xlabel('frequency w');
   ylabel('H(w)');
   title('Magnitude of H(w)');
   
-  subplot(2,1,2);
+  subplot(212);
   %plottng the phase part
   plot(w,angle(X));
   xlabel('frequency w');
