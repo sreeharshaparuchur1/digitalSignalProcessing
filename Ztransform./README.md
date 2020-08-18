@@ -7,3 +7,8 @@ The commented part of the code then plots the impulse response.
 While the Z transform for an LTI system is unique, the impulse response may not be.
 On observation of the graph (checking where the ROC(region of convergence) lies)
 we apply the inverse z-transform and find the impulse response.
+
+
+When checking the effect of theta on the LTI system, we use r = 0.95.
+When checking the effect of the radius on the LTI system, we use &theta; = 60 degrees.
+The results are poltted using z-plane with a pause given after every iteration of the for loop.
